@@ -1,0 +1,99 @@
+@font-face
+{
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
+
+body 
+{
+    display: flex;
+    margin: 0px;
+    height: 100vh;
+}
+
+#left 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: url("images/coffee_unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+#leftFooter
+{
+    position: 1;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+}
+
+h1 
+{
+    font-size: 50px;
+
+}
+
+#rightHeader
+{
+    font-size: 50px;
+
+    border: solid green;
+}
+
+/* #odin
+{
+    position: absolute;
+} */
+
+#banner
+{
+    background-color: black;
+    /* position: absolute; */
+    opacity: 0.6;
+    font-family: Norse;
+    color: white;
+}
+
+
+#center 
+{
+    width: 100%;
+    border: solid red;
+}
+
+td
+{
+    padding: 5px 15px;
+}
+
+#rightFooter
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid blue;
+}
+
+#createAccount
+{
+    width: 33%;
+    background-color: green;
+    color: white;
+    font-size: 40px;
+}
+
