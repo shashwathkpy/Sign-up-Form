@@ -1,3 +1,7 @@
+:root {
+    --left-space: 48px;
+  }
+
 @font-face
 {
     font-family: Norse;
@@ -8,7 +12,7 @@ body
 {
     display: flex;
     margin: 0px;
-    height: 100vh;
+    height: 99vh;
 }
 
 #left 
@@ -16,7 +20,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    width: 100vh;
     background: url("images/coffee_unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -39,7 +43,6 @@ body
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(238, 238, 238);
 }
 
 h1 
@@ -51,29 +54,36 @@ h1
 #rightHeader
 {
     font-size: 50px;
-
-    border: solid green;
+    margin-left: 5px;
 }
-
-/* #odin
-{
-    position: absolute;
-} */
 
 #banner
 {
     background-color: black;
-    /* position: absolute; */
     opacity: 0.6;
     font-family: Norse;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 125px;
+    margin: 80% 0%;
+}
+
+#odin
+{
+    height: 125px;
 }
 
 
 #center 
 {
+    margin-left: 5px;
     width: 100%;
-    border: solid red;
+    border: 1px aliceblue;
+    box-shadow: 5px 5px rgb(189, 208, 226);
+    border-radius: 5px;
+    background-color: aliceblue;
 }
 
 td
@@ -86,7 +96,7 @@ td
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: solid blue;
+    margin-left: 5px;
 }
 
 #createAccount
@@ -95,5 +105,23 @@ td
     background-color: green;
     color: white;
     font-size: 40px;
+    border-radius: 15px;
 }
 
+#existingAccount
+{
+    font-size: 20px;
+}
+
+.error 
+{
+    border: 3px solid red;
+    border-radius: 3px;
+}
+
+:focus
+{
+    border: 3px solid blue;
+    border-radius: 3px;
+    /* box-shadow: 3px 3px blue; */
+}
